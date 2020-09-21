@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>英雄联盟全新官方网站-腾讯游戏</title>
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/head.css">
+    <link rel="stylesheet" href="css/content.css">
+</head>
+<body>
+<!--    头部导航部分-->
+    <div class = "head">
+<!--        中间整体内容部分-->
+        <div class = "head_content">
+<!--            lol-logo部分-->
+            <a  class = "logo" href="#" title = "英雄联盟官网">
+                <img src="images/logo-public.png"  alt="英雄联盟">
+            </a>
+<!--            分类信息部分-->
+            <ul class="head_nav" id="head_nav">
+                <li>
+                    <a href="#" target="_blank" >
+                        <span class="head_nav_title">游戏资料</span>
+                        <span class="head_nav_subtitle">GAME INFO</span>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <span class="head_nav_title">商城/合作</span>
+                        <span class="head_nav_subtitle">STORE</span>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <span class="head_nav_title">社区互动</span>
+                        <span class="head_nav_subtitle">COMMUNITY</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank" title="LPL赛事官网">
+                        <span class="head_nav_title">赛事官网</span>
+                        <span class="head_nav_subtitle">ESPORTS</span>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <span class="head_nav_title">自助系统</span>
+                        <span class="head_nav_subtitle">SYSTEM</span>
+                    </a>
+                </li>
+            </ul>
+            <!--        玩家信息/登录-->
+            <div class = "head_user" id = "head_user">
+                <div class = "user_logo" id="head" title="个人中心">
+                    <a href="#"><img src="images/logo-user.png" height="auto" width="36" alt="个人中心"/></a>
+                </div>
+                <span class="login">亲爱的召唤师，欢迎<a href="#">登录</a></span>
+                <!--            玩家信息子菜单-->
+                <div class="user_info_sub" id="user_info_sub">
+                    <p class="u">登录并且绑定大区后才可以查看您的具体信息哦(包括战绩、资产、声望)</p>
+                    <p>官网个人信息显示略有延迟，请以游戏数据为准</p>
+                    <a class="info" href="#" target="_blank">进入个人中心<i class="icon"></i></a>
+                </div>
+            </div>
+<!--            掌上英雄联盟图标-->
+            <span class="head_app">
+                <a href="#" id="head_app"></a>
+                <!--掌盟图标-子菜单 -->
+                <i class="head_app_sub" id="head_app_sub">
+                    <span class="scan_code">扫码下载掌上英雄联盟</span>
+                </i>
+            </span>
+            <!--        搜索图标-->
+            <a  class = "search" id="search" href="#" title="搜索"><i class="icon"></i></a>
+        </div>
+        <!--        搜索子菜单-->
+        <div class="search_sub" id="search_sub">
+            <div class="sear">
+                <a class="btn_close_search" id="btn_close_search" href="#" title="关闭搜索"><i class="icon_xx_1"></i></a>
+                <input type="text" class="input_search" placeholder="搜索 lol.qq.com">
+                <a  class="btn_search" href="#" title="点击搜索"><i class="icon_search"></i></a>
+
+            </div>
+        </div>
+    </div>
+<!--    头部中head_nav的子菜单-->
+    <div class="head_nav_sub" id="head_nav_sub">
+        <div class="head_nav_sub_inner" >
+            <ul id = "n_sub">
+                <li>
+                    <a class="head_nav_sub_a" href="#" target="_blank">游戏下载</a>
+                    <a class="head_nav_sub_a" href="#" target="_blank">新手指引</a>
+                    <a class="head_nav_sub_a" href="#" target="_blank">资料库</a>
+                    <a class="head_nav_sub_a" href="#" target="_blank"><i class="icon_new"></i>云顶之奕</a>
+                    <a class="head_nav_sub_a" href="#" target="_blank"><i class="icon_new"></i>攻略中心</a>
+                    <a class="head_nav_sub_a" href="#" target="_blank">开发者基地</a>
+                    <a class="head_nav_sub_a" href="#" target="_blank">海克斯战利品库</a>
+                    <a class="head_nav_sub_a" href="#" target="_blank">英雄联盟宇宙</a>
+                </li>
+                <li>
+                    <a class="head_nav_sub_a" href="#" target="_blank" >点券充值</a>
+                    <a class="head_nav_sub_a" href="#" target="_blank" ><i class="icon_hot"></i>道聚城</a>
+                    <a class="head_nav_sub_a" href="#" target="_blank">周边商城</a>
+                    <a class="head_nav_sub_a" href="#" target="_blank">LOL桌游</a>
+                    <a class="head_nav_sub_a" href="#" target="_blank">LOL信用卡</a>
+                    <a class="head_nav_sub_a" href="#" target="_blank">网吧特权</a>
+                    <a class="head_nav_sub_a" href="#" target="_blank">电竞小说</a>
+                </li>
+                <li>
+                    <a class="head_nav_sub_a" href="#" target="_blank">官方社区</a>
+                    <a class="head_nav_sub_a" href="#" target="_blank">视频中心</a>
+                    <a class="head_nav_sub_a" href="#" target="_blank" >官方论坛</a>
+                    <a class="head_nav_sub_a" href="#" target="_blank">官方微信</a>
+                    <a class="head_nav_sub_a" href="#" target="_blank">官方微博</a>
+                    <a class="head_nav_sub_a" href="#" target="_blank">玩家创作馆</a>
+                    <a class="head_nav_sub_a" href="#" target="_blank"><i class="icon_new"></i>作者入驻计划</a>
+                    <a class="head_nav_sub_a" href="#" target="_blank">玩家服务</a>
+                </li>
+                <li>
+                    <a class="head_nav_sub_a" target="_blank" href="#"><i class="icon_hot"></i>LPL职业联赛</a>
+                    <a class="head_nav_sub_a" target="_blank" href="#"><i class="icon_hot"></i>LDL发展联赛</a>
+                    <a class="head_nav_sub_a" target="_blank" href="#">全球总决赛</a>
+                    <a class="head_nav_sub_a" target="_blank" href="#">全明星赛</a>
+                    <a class="head_nav_sub_a" target="_blank" href="#">德玛西亚杯</a>
+                    <a class="head_nav_sub_a" arget="_blank" href="#">季中冠军赛</a>
+                    <a class="head_nav_sub_a" target="_blank" href="#">洲际系列赛</a>
+                    <a class="head_nav_sub_a" target="_blank" href="#">全国高校联赛 </a>
+                </li>
+                <li>
+                    <a class="head_nav_sub_a" target="_blank" href="#" >联系客服</a>
+                    <a class="head_nav_sub_a" target="_blank" href="#"><i class="icon_new"></i>转区系统</a>
+                    <a class="head_nav_sub_a" target="_blank" href="#"><i class="icon_hot"></i>封号查询</a>
+                    <a class="head_nav_sub_a" target="_blank" href=#">账号注销</a>
+                    <a class="head_nav_sub_a" target="_blank" href="#"><i class="icon_new"></i>信誉分系统</a>
+                    <a class="head_nav_sub_a" target="_blank" href="#">服务器状态查询</a>
+                    <a class="head_nav_sub_a" target="_blank" href="#">秩序殿堂</a>
+                    <a class="head_nav_sub_a" target="_blank" href="#">峡谷之巅</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+<!--    顶部大图-->
+    <div class="banner" id="banner">
+        <img class="big_image" id="big_image" src="images/big1.jpg" height="720" width="1920" alt="告诉世界我们是冠军"/>
+        <img class="small_image" id="small_image" src="images/small1.jpg" height="360" width="1920" alt="告诉世界我们是冠军"/>
+        <!--absolute导航背景色-->
+        <div class="nav_background"></div>
+<!--        查看详情按钮-->
+        <a class="top_middle" href="#" target="_blank"></a>
+<!--        版本详情按钮-->
+        <div class="top_version">当前游戏版本：
+            <em>Ver 10.8</em>
+            <a class="ver" href="#" target="_blank">版本详情</a>
+        </div>
+    </div>
+<!--页面内容区域-->
+    <div class = "content">
+<!--        内容详情-->
+        <div class = "content-detail">
+<!--            轮播图-->
+            <div class="content_scoll">
+                <ul class="content_scorll_images" id="content_scorll_images">
+                    <li><a href="#" target="_blank"><img src="images/scroll/s1.jpeg" height="340" width="820" alt="正在加载"/></a></li>
+                    <li><a href="#" target="_blank"><img src="images/scroll/s2.jpeg" height="340" width="820" alt="正在加载"/></a></li>
+                    <li><a href="#" target="_blank"><img src="images/scroll/s3.jpeg" height="340" width="820" alt="正在加载"/></a></li>
+                    <li><a href="#" target="_blank"><img src="images/scroll/s4.jpeg" height="340" width="820" alt="正在加载"/></a></li>
+                    <li><a href="#" target="_blank"><img src="images/scroll/s5.jpeg" height="340" width="820" alt="正在加载"/></a></li>
+                </ul>
+                <ul class="content_scorll_words"  id="content_scorll_words">
+                    <li>魔女 婕拉 至臻</li>
+                    <li>魔女2020</li>
+                    <li>参与竞猜赢Q币</li>
+                    <li>艾欧尼亚故事</li>
+                    <li>LPL周边特惠</li>
+                </ul>
+            </div>
+<!--            新闻区-->
+            <div class = "content_news">
+<!--                标题-->
+                <ul class="news_title" id="news_title">
+                    <li>综合</li>
+                    <li>公告</li>
+                    <li>赛事</li>
+                    <li>攻略</li>
+                    <li>社区</li>
+                </ul>
+<!--                内容-->
+                <div class="news_content" id="news_content">
+                    <ul class="news_content_ul">
+                        <li class="ul_first"><a href="#" target="_blank">2020LPL春季赛季后赛宣传片：落子英雄</a></li>
+                        <li class="ul_content"><span class="saishi left">赛事</span><a class="sai" href="#" target="_blank"> LPL春季赛常规赛MVP最佳新秀与阵容公布 </a><span class="right">04-22</span></li>
+                        <li class="ul_content"><span class="saishi left">赛事</span><a class="sai" href="#" target="_blank">2020LPL春季赛季后赛战队海报</a><span class="right">04-21</span></li>
+                        <li class="ul_content"><span class="saishi left">赛事</span><a class="sai" href="#" target="_blank"> LPL春季赛季后赛将启 群雄逐鹿决战巅峰 </a><span class="right">04-20</span></li>
+                        <li class="ul_content"><span class="gonggao left">新闻</span><a class="gong" href="#" target="_blank">凤出东方 凰鸣四海！FPX冠军手办抢先看！ </a><span class="right">04-20</span></li>
+                        <li class="ul_content"><span class="saishi left">赛事</span><a class="sai" href="#" target="_blank">LPL春季赛季后赛赛程正式公布 </a><span class="right">04-20</span></li>
+                        <li class="ul_content"><span class="saishi left">赛事</span><a  class="sai" href="#" target="_blank">2020LPL春季赛常规赛荣誉评定开启 </a><span class="right">04-17</span></li>
+                        <li class="last"><a href="#" target="_blank">阅读更多<span>最新资讯</span> <i class="icon" ></i></a></li>
+                    </ul>
+                    <ul class="news_content_ul1 news_content_ul">
+                        <li class="ul_first"><a href="#" target="_blank">关于银河战争（2020）增加代币获取任务的说...</a></li>
+                        <li class="ul_content"><span class="gonggao left">公告</span><a class="gong" href="#" target="_blank">4月22日不停机更新公告 </a><span class="right">04-22</span></li>
+                        <li class="ul_content"><span class="gonggao left">公告</span><a class="gong" href="#" target="_blank">4月24日免费英雄更新公告 </a><span class="right">04-22</span></li>
+                        <li class="ul_content"><span class="gonggao left">公告</span><a class="gong" href="#" target="_blank">游戏环境公示及处罚名单4月17日 </a><span class="right">04-17</span></li>
+                        <li class="ul_content"><span class="gonggao left">公告</span><a class="gong" href="#" target="_blank"> 10.8云顶之弈更新：暗星法师泽拉斯降临 </a><span class="right">04-15</span></li>
+                        <li class="ul_content"><span class="gonggao left">公告</span><a class="gong" href="#" target="_blank">10.8版本更新公告：死亡机制迎来重大调整 </a><span class="right">04-15</span></li>
+                        <li class="ul_content"><span class="gonggao left">公告</span><a  class="gong" href="#" target="_blank">4月17日免费英雄更新公告 </a><span class="right">04-15</span></li>
+                        <li class="last"><a href="#" target="_blank">阅读更多<span>最新资讯</span> <i class="icon" ></i></a></li>
+                    </ul>
+                    <ul class="news_content_ul2 news_content_ul">
+                        <li class="ul_first"><a href="#" target="_blank">豪门宿敌再度相遇 RNG和EDG幻神对拼 </a></li>
+                        <li class="ul_content"><span class="saishi left">赛事</span><a class="sai" href="#" target="_blank"> LPL季后赛4月23日首发 Scout对阵Xiaohu </a><span class="right">04-22</span></li>
+                        <li class="ul_content"><span class="saishi left">赛事</span><a class="guan" href="#" target="_blank">此刻敬英雄！亲历者为你复盘历届春决 </a><span class="right">04-22</span></li>
+                        <li class="ul_content"><span class="saishi left">赛事</span><a class="sai" href="#" target="_blank">LPL实时数据功能上线，线上观赛体验升级 </a><span class="right">04-22</span></li>
+                        <li class="ul_content"><span class="shipin left">视频</span><a class="shi" href="#" target="_blank">2020LPL春季赛季后赛宣传片：落子英雄 </a><span class="right">04-22</span></li>
+                        <li class="ul_content"><span class="saishi left">赛事</span><a class="sai" href="#" target="_blank">LPL春季赛常规赛MVP最佳新秀与阵容公布 </a><span class="right">04-22</span></li>
+                        <li class="ul_content"><span class="shipin left">视频</span><a  class="shi" href="#" target="_blank"> LPL季后赛巡礼：eStar新军成黑马，PDD又捡到宝了 </a><span class="right">04-22</span></li>
+                        <li class="last"><a href="#" target="_blank">阅读更多<span>最新资讯</span> <i class="icon" ></i></a></li>
+                    </ul>
+                    <ul class="news_content_ul3 news_content_ul">
+                        <li class="ul_first"><a href="#" target="_blank">云顶C位关键防装 10.8伏击之爪解析 </a></li>
+                        <li class="ul_content"><span class="jiaoxue left">教学</span><a class="jiao" href="#" target="_blank">上单扎克能扛能打 欧美赛区黑科技推荐 </a><span class="right">04-20</span></li>
+                        <li class="ul_content"><span class="jiaoxue left">教学</span><a class="jiao" href="#" target="_blank">云顶三大快速成型阵容！萨科领衔D牌刺客 </a><span class="right">04-20</span></li>
+                        <li class="ul_content"><span class="jiaoxue left">教学</span><a class="jiao" href="#" target="_blank">10.8国服四大强力上单 猴子大树制霸上路 </a><span class="right">04-20</span></li>
+                        <li class="ul_content"><span class="jiaoxue left">教学</span><a class="jiao" href="#" target="_blank"> 每天一个云顶上分小技巧 梨落教你未来流星雨强势上分</a><span class="right">04-20</span></li>
+                        <li class="ul_content"><span class="jiaoxue left">教学</span><a class="jiao" href="#" target="_blank">10.8游走英雄制霸中路 加里奥成中路一哥 </a><span class="right">04-18</span></li>
+                        <li class="ul_content"><span class="jiaoxue left">教学</span><a  class="jiao" href="#" target="_blank">云顶暗星法师崛起！五费泽拉斯领衔三大S级阵容 </a><span class="right">04-18</span></li>
+                        <li class="last"><a href="#" target="_blank">阅读更多<span>最新资讯</span> <i class="icon" ></i></a></li>
+                    </ul>
+                    <ul class="news_content_ul4 news_content_ul">
+                        <li class="ul_first"><a href="#" target="_blank">LPL官宣最佳阵容！JDG三人上榜 赛后举动网友...</a></li>
+                        <li class="ul_content"><span class="saishi left">赛事</span><a class="sai" href="#" target="_blank"> Chovy：cvMax严厉复盘有效 不太清楚LPL想和谁交手</a><span class="right">04-20</span></li>
+                        <li class="ul_content"><span class="saishi left">赛事</span><a class="sai" href="#" target="_blank">大师兄或将回归TSM！G2搞事票选LPL冠军 </a><span class="right">04-20</span></li>
+                        <li class="ul_content"><span class="shipin left">视频</span><a class="shi" href="#" target="_blank">《口吐芬fun》第十期：抱歉，"队霸"就是可以为所欲为  </a><span class="right">04-20</span></li>
+                        <li class="ul_content"><span class="saishi left">赛事</span><a class="sai" href="#" target="_blank">4月22日LPL海报：“星光之力”ES大战"梦想少年"WE </a><span class="right">04-20</span></li>
+                        <li class="ul_content"><span class="saishi left">赛事</span><a class="sai" href="#" target="_blank">JDG众将整活刷礼物！10.9预告猴子死歌削弱 </a><span class="right">04-18</span></li>
+                        <li class="ul_content"><span class="saishi left">赛事</span><a  class="sai" href="#" target="_blank">【超凡前瞻】WE vs ES：是豪门依旧豪门还是黑马打破尘04</a><span class="right">04-18</span></li>
+                        <li class="last"><a href="#" target="_blank">阅读更多<span>最新资讯</span> <i class="icon" ></i></a></li>
+                    </ul>
+                </div>
+            </div>
+<!--            热门活动-->
+            <div class = "hot_act">
+                <div class = "act_first">
+                    <h2 class = "first_h_title">热门活动</h2>
+                    <ul class = "first_titles" id = "first_titles">
+                        <li>正在进行</li>
+                        <li>商城特惠</li>
+                        <li>长期活动</li>
+                    </ul>
+                    <a class="first_more" target="_blank" href="#">更多<i class="more_arrow"></i></a>
+                </div>
+                <div class = "act_last" id = "act_last">
+<!--                    正在进行-->
+                    <ul class = "last_listl0 last_list_ul">
+                        <li>
+                            <img src="images/act/act1_1.jpg" alt="FPX冠军手办预售" height="207px" width = "193px">
+                            <p>FPX冠军手办预售</p>
+                            <span>38天后结束</span><i class = "act_icon"></i>
+                            <div class = "cover">
+                                <i class="hover_border"></i>
+                                <div class="cover_content">
+                                    <h4 class="p1">FPX冠军手办预售</h4>
+                                    <p class="p2">FPX冠军限定手办预售，专属图标，多重菜单赠品下单即得！</p>
+                                    <p class="p2">2020-04-23 - 2020-05-31</p>
+                                </div>
+                            </div>
+                            <a class="act_a" href="#" target="_blank" title="谁是最强竞猜王" ></a>
+                        </li>
+                        <li>
+                            <img src="images/act/act1_2.jpg" alt="谁是最强竞猜王" height="207px" width = "193px">
+                            <p>谁是最强竞猜王</p>
+                            <span>9天后结束</span><i class = "act_icon"></i>
+                            <div class = "cover">
+                                <i class="hover_border"></i>
+                                <div class="cover_content">
+                                    <h4 class="p1">谁是最强竞猜王</h4>
+                                    <p class="p2">4月20日-5月2日参与2020LPL春季竞猜活动，赢取Q币和周边奖励。</p>
+                                    <p class="p2">2020-04-20 - 2020-05-02</p>
+                                </div>
+                            </div>
+                            <a class="act_a" href="#" target="_blank" title="谁是最强竞猜王" ></a>
+                        </li>
+                        <li>
+                            <img src="images/act/act1_3.jpg" alt="LPL周边特惠" height="207px" width = "193px">
+                            <p>LPL周边特惠</p>
+                            <span>12天后结束</span><i class = "act_icon"></i>
+                            <div class = "cover">
+                                <i class="hover_border"></i>
+                                <div class="cover_content">
+                                    <h4 class="p1">LPL周边特惠</h4>
+                                    <p class="p2">助威LPL季后赛，LPL主题周边限时7折回馈。</p>
+                                    <p class="p2">2020-04-20 - 2020-05-05</p>
+                                </div>
+                            </div>
+                            <a class="act_a" href="#" target="_blank" title="LPL周边特惠" ></a>
+                        </li>
+                        <li>
+                            <img src="images/act/act1_4.jpg" alt="魔女 婕拉 至臻" height="207px" width = "193px">
+                            <p>魔女 婕拉 至臻</p>
+                            <span>281天后结束</span><i class = "act_icon"></i>
+                            <div class = "cover">
+                                <i class="hover_border"></i>
+                                <div class="cover_content">
+                                    <h4 class="p1">魔女 婕拉 至臻</h4>
+                                    <p class="p2">100至臻点（2020）兑换</p>
+                                    <p class="p2">2020-04-17 - 2021-01-29</p>
+                                </div>
+                            </div>
+                            <a class="act_a" href="#" target="_blank" title="魔女 婕拉 至臻" ></a>
+                        </li>
+                    </ul>
+<!--                    商城特惠-->
+                    <ul class = "last_listl1 last_list_ul">
+                        <li>
+                            <img src="images/act/act2_1.jpg" alt="黯晶2020" height="207px" width = "193px">
+                            <p>黯晶2020</p>
+                            <span>长期活动</span>
+                            <div class = "cover">
+                                <i class="hover_border"></i>
+                                <div class="cover_content">
+                                    <h4 class="p1">黯晶2020</h4>
+                                    <p class="p2">全新皮肤和炫彩上线</p>
+                                    <p class="p2">开启时间2020-03-10</p>
+                            </div>
+                            </div>
+                            <a class="act_a" href="#" target="_blank" title="黯晶2020" ></a>
+                        </li>
+                        <li>
+                            <img src="images/act/act2_2.jpg" alt="小小英雄第四系列" height="207px" width = "193px">
+                            <p>小小英雄第四系列</p>
+                            <span>长期活动</span>
+                            <div class = "cover">
+                                <i class="hover_border"></i>
+                                <div class="cover_content">
+                                    <h4 class="p1">小小英雄第四系列</h4>
+                                    <p class="p2">软软、小志、团子，向你报到！</p>
+                                    <p class="p2">2019-08-20</p>
+                                </div>
+                            </div>
+                            <a class="act_a" href="#" target="_blank" title="小小英雄第四系列" ></a>
+                        </li>
+                        <li>
+                            <img src="images/act/act2_3.jpg" alt="峡谷勇者2020" height="207px" width = "193px">
+                            <p>峡谷勇者2020</p>
+                            <span>21天后结束</span>
+                            <div class = "cover">
+                                <i class="hover_border"></i>
+                                <div class="cover_content">
+                                    <h4 class="p1">峡谷勇者2020</h4>
+                                    <p class="p2">全新皮肤、炫彩礼包上线！</p>
+                                    <p class="p2">2020-03-31 - 2020-05-14</p>
+                                </div>
+                            </div>
+                            <a class="act_a" href="#" target="_blank" title="峡谷勇者2020" ></a>
+                        </li>
+                        <li>
+                            <img src="images/act/act2_4.jpg" alt="魔女2020" height="207px" width = "193px">
+                            <p>魔女2020</p>
+                            <span>8天后结束</span><i class = "act_icon"></i>
+                            <div class = "cover">
+                                <i class="hover_border"></i>
+                                <div class="cover_content">
+                                    <h4 class="p1">魔女2020</h4>
+                                    <p class="p2">全新皮肤。炫彩礼包上线</p>
+                                    <p class="p2">2020-04-17 - 2020-05-01</p>
+                                </div>
+                            </div>
+                            <a class="act_a" href="#" target="_blank" title="魔女2020" ></a>
+                        </li>
+                    </ul>
+<!--                    长期活动-->
+                    <ul class = "last_listl2 last_list_ul">
+                        <li>
+                            <img src="images/act/act3_1.jpg" alt="LPL X NIKE联名队服" height="207px" width = "193px">
+                            <p>LPL X NIKE联名队服</p>
+                            <span>长期活动</span>
+                            <div class = "cover">
+                                <i class="hover_border"></i>
+                                <div class="cover_content">
+                                    <h4 class="p1">LPL X NIKE联名队服</h4>
+                                    <p class="p2">选手同款。LPL X NIKE联名队服现已上线</p>
+                                    <p class="p2">开启时间：2020-01-13</p>
+                                </div>
+                            </div>
+                            <a class="act_a" href="#" target="_blank" title="LPL X NIKE联名队服" ></a>
+                        </li>
+                        <li>
+                            <img src="images/act/act3_2.jpg" alt="十周年最强福利" height="207px" width = "193px">
+                            <p>十周年最强福利</p>
+                            <span>长期活动</span>
+                            <div class = "cover">
+                                <i class="hover_border"></i>
+                                <div class="cover_content">
+                                    <h4 class="p1">十周年最强福利</h4>
+                                    <p class="p2">限定皮肤回馈 无限火力归来</p>
+                                    <p class="p2">开启时间：2019-10-18</p>
+                                </div>
+                            </div>
+                            <a class="act_a" href="#" target="_blank" title="十周年最强福利" ></a>
+                        </li>
+                        <li>
+                            <img src="images/act/act3_3.jpg" alt="英雄联盟信誉分查询" height="207px" width = "193px">
+                            <p>英雄联盟信誉分查询</p>
+                            <span>长期活动</span>
+                            <div class = "cover">
+                                <i class="hover_border"></i>
+                                <div class="cover_content">
+                                    <h4 class="p1">英雄联盟信誉分查询</h4>
+                                    <p class="p2">希望各位玩家保持良好游戏行为，一起营造健康的游戏环境！</p>
+                                    <p class="p2">开启时间：2019-09-09</p>
+                                </div>
+                            </div>
+                            <a class="act_a" href="#" target="_blank" title="英雄联盟信誉分查询" ></a>
+                        </li>
+                        <li>
+                            <img src="images/act/act3_4.jpg" alt="《校园解说大赛》等你发声！" height="207px" width = "193px">
+                            <p>《校园解说大赛》等你发声！</p>
+                            <span>长期活动</span>
+                            <div class = "cover">
+                                <i class="hover_border"></i>
+                                <div class="cover_content">
+                                    <h4 class="p1">《校园解说大赛》等你发声！</h4>
+                                    <p class="p2">寻找校园最强赛事解说，助攻你的职业解说梦！</p>
+                                    <p class="p2">开启时间：2018-04-16</p>
+                                </div>
+                            </div>
+                            <a class="act_a" href="#" target="_blank" title="《校园解说大赛》等你发声！" ></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--            下载游戏资料模块-->
+            <div class = "game_nav">
+                <ul class = "game_nav_ul1">
+                    <li class = "game_download" title = "游戏下载">
+                        <video autoplay="" loop="" muted="" width="366" height="168">
+                            <source src="images/btn-download.mp4" type="video/mp4">
+                        </video>
+                    </li>
+                    <li class = "game_content1" >
+                        <span>新手必备</span>
+                        <div class="game_1">
+                            <a class="game_1_1" href="#" target="_blank"><i class="game_1_1_icon"></i>指引</a>
+                            <a class="game_2_2" href="#" target="_blank"><i class="game_2_2_icon"></i>礼包</a>
+                        </div>
+                    </li>
+                    <li class="game_content2" title="领取中心">
+                        <a  href="#" target="_blank" >领取中心</a>
+                    </li>
+                </ul>
+                <ul class = "game_nav_ul2">
+                    <li title = "在线客服">
+                        <a href="#" target="_blank">
+                            <i class=" u2_i_1 myscale"></i>在线客服
+                        </a>
+                    </li>
+                    <li title = "秩序殿堂">
+                        <a href="#" target="_blank">
+                            <i class=" u2_i_2 myscale"></i>秩序殿堂
+                        </a>
+                    </li>
+                    <li title = "游戏资料">
+                        <a href="#" target="_blank">
+                            <i class=" u2_i_3 myscale"></i>游戏资料
+                        </a>
+                    </li>
+                    <li class = "li_last" title = "峡谷之巅">
+                        <a href="#" target="_blank">
+                            <i class=" u2_i_4 myscale"></i>峡谷之巅
+                        </a>
+                    </li>
+                    <li title = "云顶之奕">
+                        <a href="#" target="_blank">
+                            <b class = new_icon></b>
+                            <i class=" u2_i_5 myscale"></i>云顶之奕
+                        </a>
+                    </li >
+                    <li title = "攻略中心">
+                        <a href="#" target="_blank">
+                            <i class=" u2_i_6 myscale"></i>攻略中心
+                        </a>
+                    </li>
+                    <li title = "LOL宇宙">
+                        <a href="#" target="_blank">
+                            <i class=" u2_i_7 myscale"></i>LOL宇宙
+                        </a>
+                    </li>
+                    <li class = "li_last" title = "微信绑定">
+                        <a href="#" target="_blank">
+                            <i class="  u2_i_8 myscale"></i>微信绑定
+                        </a>
+                    </li>
+                </ul>
+            </div>
+<!--            新皮肤和英雄区域-->
+            <div class = "hero_skin">
+<!--                新英雄-->
+                <div class = "new_hero">
+                    <img src="images/heroAndskin/newhero.jpg" alt="远古恐惧 费德提克" width = "402px" height = "254">
+                    <i class = "pic_mask"></i>
+                    <i class = "tip_new">新英雄</i>
+                    <p class = "intro_new">穿街过市，人声皆喑。</p>
+                    <p class = "name_new"><a href="">远古恐惧 费德提克</a></p>
+                    <div class = "hover_new_hero">
+                        <i class = "border"></i>
+                        <p>远古恐惧 费德提克</p>
+                        <a href="">查看详情 <i class = "more_arrow2"></i></a>
+                    </div>
+                </div>
+<!--                新皮肤-->
+                <div class = "new_skin" id = "new_skin">
+                    <img src="images/heroAndskin/new_skin.jpg" alt="魔女2020" width="402" height = "244">
+                    <i class = "pic_mask"></i>
+                    <i class = "tip_new">新皮肤</i>
+                    <p class = "intro_new">全新皮肤、炫彩礼包上线 </p>
+                    <p class = "name_new"><a href="">魔女2020</a></p>
+                    <div class = "hover_new_skin" id = "hover_new_skin">
+                        <div><video id = "hover_video"  muted src="images/heroAndskin/new_skin_video.mp4" width="435" height="244" controls autoplay   loop="loop"></video></div>
+                        <p class="p1">全新皮肤、炫彩礼包上线</p>
+                        <p class="p2">魔女2020</p>
+                        <a class = "a1" href="">查看详情</a>
+                    </div>
+                </div>
+            </div>
+<!--            版本导航-->
+            <div class = "ver_nav">
+<!--            版本更新-->
+                <div class = "update">
+                    <img src="images/version/update.jpg" alt="版本更新" width = "240" height = "120">
+                    <div class = "hover_update">
+                        <img src="images/version/update.jpg" alt="版本更新" width = "270" height = "186">
+                        <p class = "p1">版本更新</p>
+                        <p class = "p2">游戏版本10.8</p>
+                        <a class = "a1" href="">查看详情</a>
+                    </div>
+                </div>
+<!--                开发者基地-->
+                <div class = "develop_base">
+                    <img src="images/version/base.jpg" alt="-开发者日志：风暴欲临" width = "242" height = "180">
+                    <div class = "hover_base">
+                        <i class="base_border"></i>
+                        <div>
+                            <h4 class = "p3">/开发者日志风暴欲临：</h4>
+                            <p class = "p4">沃利贝尔更新的最新进展，提前了解他的模型、语音以及更多信息。 </p>
+                        </div>
+
+                    </div>
+                </div>
+                <!--                周边-->
+                <div class = "round">
+                    <img src="images/version/around1.jpg" alt="英雄联盟宇宙：城邦传说 | 艾欧尼亚" width="240" height="120">
+                    <img class = "hover_round" src="images/version/around2.jpg" alt="英雄联盟宇宙：城邦传说 | 艾欧尼亚" width="240" height="120">
+                </div>
+                <!--                周免-->
+                <div class = "week_free" id = "week_free">
+                    <i class = "icon_left"></i>周免
+                    <i class = "more_arrow1"></i>
+                    <i class = "icon_right"></i>
+                </div>
+                <div class = "hover_week_free" id = "hover_week_free">
+                    <i class = "border_arrow"></i>
+                    <ul class = "hero_ul">
+                        <li class = "hero_li">
+                            <img src="images/herohead/Aatrox.png" alt="" width="46" height = "46">
+                        </li>
+                        <li class = "hero_li">
+                            <img src="images/herohead/Ahri.png" alt="" width="46" height = "46">
+                        </li>
+                        <li class = "hero_li">
+                            <img src="images/herohead/Akali.png" alt="" width="46" height = "46">
+                        </li>
+                        <li class = "hero_li">
+                            <img src="images/herohead/Alistar.png" alt="" width="46" height = "46">
+                        </li>
+                        <li class = "hero_li">
+                            <img src="images/herohead/Amumu.png" alt="" width="46" height = "46">
+                        </li>
+                        <li class = "hero_li">
+                            <img src="images/herohead/Anivia.png" alt="" width="46" height = "46">
+                        </li>
+                        <li class = "hero_li">
+                            <img src="images/herohead/Annie.png" alt="" width="46" height = "46">
+                        </li>
+                        <li class = "hero_li">
+                            <img src="images/herohead/Aphelios.png" alt="" width="46" height = "46">
+                        </li>
+                        <li class = "hero_li">
+                            <img src="images/herohead/Ashe.png" alt="" width="46" height = "46">
+                        </li>
+                        <li class = "hero_li">
+                            <img src="images/herohead/AurelionSol.png" alt="" width="46" height = "46">
+                        </li>
+                        <li class = "hero_li">
+                            <img src="images/herohead/Azir.png" alt="" width="46" height = "46">
+                        </li>
+                        <li class = "hero_li">
+                            <img src="images/herohead/Bard.png" alt="" width="46" height = "46">
+                        </li>
+                        <li class = "hero_li">
+                            <img src="images/herohead/Brand.png" alt="" width="46" height = "46">
+                        </li>
+                        <li class = "hero_li">
+                            <img src="images/herohead/Chogath.png" alt="" width="46" height = "46">
+                        </li>
+                        <li class = "hero_li">
+                            <img src="images/herohead/Draven.png" alt="" width="46" height = "46">
+                        </li>
+                        <li class = "hero_li">
+                            <img src="images/herohead/Aatrox.png" alt="" width="46" height = "46">
+                        </li>
+                        <li class = "hero_li">
+                            <img src="images/herohead/DrMundo.png" alt="" width="46" height = "46">
+                        </li>
+                        <li class = "hero_li">
+                            <img src="images/herohead/Ekko.png" alt="" width="46" height = "46">
+                        </li>
+                        <li class = "hero_li">
+                            <img src="images/herohead/Jinx.png" alt="" width="46" height = "46">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+<!--            更多的新皮肤展示-->
+            <div class = "more_skin" id="more_skin">
+                <div class = "more_skin_container">
+                    <ul class = "container_ul">
+                        <li class="container_li">
+                            <img src="images/moreskin/moreskin1.jpg" alt="" width="185" height="117">
+                            <p class = moreskin_name>创世魔神2020</p>
+                        </li>
+                        <li class="container_li">
+                            <img src="images/moreskin/moreskin2.jpg" alt="" width="185" height="117">
+                            <p class = moreskin_name>愚人节2020</p>
+                        </li>
+                        <li class="container_li">
+                            <img src="images/moreskin/moreskin3.jpg" alt="" width="185" height="117">
+                            <p class = moreskin_name>峡谷勇士2020</p>
+                        </li>
+                        <li class="container_li">
+                            <img src="images/moreskin/moreskin4.jpg" alt="" width="185" height="117">
+                            <p class = moreskin_name>银河战争</p>
+                        </li>
+                        <li class="container_li">
+                            <img src="images/moreskin/moreskin5.jpg" alt="" width="185" height="117">
+                            <p class = moreskin_name>黯星2020</p>
+                        </li>
+                        <li class="container_li">
+                            <img src="images/moreskin/moreskin6.jpg" alt="" width="185" height="117">
+                            <p class = moreskin_name>腥红之月2020</p>
+                        </li>
+                        <li class="container_li">
+                            <img src="images/moreskin/moreskin7.jpg" alt="" width="185" height="117">
+                            <p class = moreskin_name>2020情人节</p>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+<!--        FANART部分-->
+        <div class = "f_bg">
+            <div class = "fanart">
+    <!--            左侧部分-->
+                <div class = "fanart_left">
+                    <div class = "act_first"><!--复用热门活动部分-->
+                        <h2 class = "first_h_title">FANART创作馆</h2>
+                        <a class="first_more" target="_blank" href="#">更多<i class="more_arrow"></i></a>
+                    </div>
+                    <ul class = "pic_ul">
+                        <li>
+                            <a><img src="images/fanart/f1.jpg" alt=""></a>
+                            <div class = "hover_fanart">
+                                <h4 class = "p5" >
+                                    星之守护者 妮蔻
+                                </h4>
+                            </div>
+                        </li>
+                        <li>
+                            <a><img src="images/fanart/f2.jpg" alt=""></a>
+                            <div class = "hover_fanart">
+                                <h4 class = "p5">
+                                    卡莎
+                                </h4>
+                            </div>
+                        </li>
+                        <li>
+                            <a><img src="images/fanart/f3.jpg" alt=""></a>
+                            <div class = "hover_fanart">
+                                <h4 class = "p5">
+                                    大元素使拉克丝油画
+                                </h4>
+                            </div>
+                        </li>
+                        <li>
+                            <a><img src="images/fanart/f4.jpg" alt=""></a>
+                            <div class = "hover_fanart">
+                                <h4 class = "p5">
+                                    三国神兽饕鬄、麒麟、辟邪
+                                </h4>
+                            </div>
+                        </li>
+                        <li>
+                            <a><img src="images/fanart/f5.jpg" alt=""></a>
+                            <div class = "hover_fanart">
+                                <h4 class = "p5">
+                                    云顶之弈-【小小英雄】粘土手作
+                                </h4>
+                            </div>
+                        </li>
+                        <li>
+                            <a><img src="images/fanart/f6.jpg" alt=""></a>
+                            <div class = "hover_fanart">
+                                <h4 class = "p5">
+                                    真实伤害！
+                                </h4>
+                            </div>
+                        </li>
+                        <li>
+                            <a><img src="images/fanart/f7.jpg" alt=""></a>
+                            <div class = "hover_fanart">
+                                <h4 class = "p5">
+                                    猩红之月——劫
+                                </h4>
+                            </div>
+                        </li>
+                        <li>
+                            <a><img src="images/fanart/f8.jpg" alt=""></a>
+                            <div class = "hover_fanart">
+                                <h4 class = "p5">
+                                    好运姐情人节皮肤设计
+                                </h4>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+    <!--            右侧部分-->
+                <div class = "fanart_right">
+                    <div  class = "left_col">
+                        <img src="images/fanart/leftcol.png" alt="" width="241" height = "411">
+                        <span class = "p1"><i class = "f_icon_left">精品推荐</i><i class = "f_icon_right"></i></span><
+                    </div>
+                    <ul class = "right_col_ul">
+                        <li class = "right_col_li">
+                            <img src="images/fanart/rightcol1.jpg" alt="">
+                            <a href=""><i class = "f_icon_left"></i>英雄联盟用户调查</a>
+                        </li>
+                        <li class = "right_col_li">
+                            <img src="images/fanart/rightcol2.jpg" alt="">
+                            <a href=""><i class = "f_icon_left"></i>见证版本历史</a>
+                        </li>
+                        <li class = "right_col_li">
+                            <img src="images/fanart/rightcol3.jpg" alt="">
+                            <a href=""><i class = "f_icon_left"></i>年度品牌展示</a>
+                        </li>
+                        <li class = "right_col_li_last">
+                            <i class  = "icon_left"></i>
+                            合作媒体
+                            <i class = "more_arrow1"></i>
+                            <i class = "icon_right"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class = "foot">
+        <div class = "foot_content">
+            <div class = "foot_dark">
+                <div class = "foot_left">
+                    <a class = "f1" href="">腾讯互动娱乐</a>
+                    <a class = "f2" href="">riot</a>
+                </div>
+                <ul class = "foot_right">
+                    <li>
+                        <a href="">腾讯互动娱乐</a>
+                        <span>|</span>
+                        <a href="">服务条款</a>
+                        <span>|</span>
+                        <a href="">腾讯游戏隐私保护指引</a>
+                        <span>|</span>
+                        <a href="">腾讯游戏招聘</a>
+                        <span>|</span>
+                        <a href="">腾讯游戏客服</a>
+                        <span>|</span>
+                        <a href="">游戏地图</a>
+                        <span>|</span>
+                        <a href="">腾讯网</a>
+                        <span>|</span>
+                        <a href="">网站导航</a>
+                    </li>
+                    <li >
+                        <a href="">腾讯公司版权所有</a>
+                    </li>
+                    <li >
+                        <a href="" >COPYRIGHT © 1998 - 2020 TENCENT. ALL RIGHTS RESERVED.</a>
+                    </li>
+                    <li >
+                        <a href="" >COPYRIGHT © 2012 Riot Games,Inc. ALL RIGHTS RESERVED.</a>
+                    </li>
+                    <li >
+                        <a href="" >本网络游戏适合18+岁的用户使用；为了您的健康，请合理控制游戏时间。</a>
+                    </li>
+                    <li>
+                        <a href=""  >粤网文[2017]6138-1456号</a>
+                        <span>|</span>
+                        <a href=""  >（总）网出证（粤）字第057号</a>
+                    </li>
+                    <li>
+                        <a href=""  >批准文号：新出审字[2011]310号 </a>
+                        <span>|</span>
+                        <a href=""  >文网进字[2011] 004号 </a>
+                        <span>|</span>
+                        <a href=""  >出版物号：ISBN 978-7-89989-145-2 </a>
+                        <span>|</span>
+                        <a href=""  >全国文化市场统一举报电话：12318 </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+<script type = "text/javascript" src = "js/jquery-3.5.0.min.js"></script>
+<script src="js/head.js"></script>
+<script src="js/content.js"></script>
+</body>
+</html>

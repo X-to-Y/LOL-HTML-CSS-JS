@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>英雄列表-英雄联盟官方网站-腾讯游戏</title>
+    <link rel="stylesheet" href="css/default.css">
+</head>
+<body>
+<!--    头部-->
+    <div class = "head">
+        <div class = "head-container">
+<!--            头部logo-->
+            <div class = "head-logo">
+                <div class = "logo-LOL"></div>
+                <div class = "logo-strategy"></div>
+            </div>
+<!--            头部导航-->
+            <ul  class = "head-nav">
+                <li><a href="">英雄</a></li>
+                <li><a href="">统计</a></li>
+                <li><a href="">云顶之奕</a></li>
+            </ul>
+<!--            头部搜索按钮-->
+            <div class = "head-search" onclick="popHeadSearch()"><i></i></div>
+<!--            搜索按钮的点击事件-->
+            <div class = "onclick-search" id = "onclick-search">
+                <div class = "onclick-search-container">
+                    <div class = "s-search"><a href=""></a></div>
+                    <input type = "text" class = "s-input" placeholder = "搜索 lol.qq.com">
+                    <div class = "s-close" onclick="closeHeadSearch()"><i></i></div>
+                </div>
+            </div>
+<!--            头部登录区域-->
+            <div class = "head-login">
+                <div class = "login-head">
+                    <img src="images/default.png" width="36px" alt=""> <span></span>
+                </div>
+                <div class = "login-info">
+                    <span>
+                       亲爱的召唤师，欢迎 <a href="">登录</a>
+                    </span>
+                </div>
+            </div>
+<!--            登录的hover事件-->
+            <div class = "hover-login">
+                <div class = "login-txt">
+                    <p>
+                        登录并且绑定大区后才可以查看您的具体信息哦<br/>
+                        (包括战绩、资产、声望）
+                    </p>
+                    <p>
+                        官网个人信息显示略有延迟，请以游戏数据为准
+                    </p>
+                    <div>进入个人中心</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--内容-->
+    <div class = "content">
+<!--        大海报-->
+        <div class = "content-img">
+<!--            背景图-->
+            <img src="images/0.jpg" alt="">
+<!--            提示小横条-->
+            <div class = "img-tips">
+                <div class = "tips-blur"></div>
+                <i></i>当前版本可供分析的数据不足，我们将展示上一个版本的数据，待有足够的数据后，将为您呈现最新的玩法数据
+            </div>
+<!--            中间文字内容-->
+            <div class = "img-container">
+<!--                英雄文字信息-->
+                <ul class = "img-container-ul">
+                    <li>地下搏击角斗士</li>
+                    <li>腕豪 瑟提</li>
+                    <li>查看详情 <i></i></li>
+                </ul>
+<!--                版本信息-->
+                <div class = "img-container-version"><i></i> Ver 10.9版本公告</div>
+            </div>
+        </div>
+        <div class = "content-container">
+<!--            页面分类区域容器-->
+            <div class = "container-classify">
+<!--                左上角分类文本-->
+                <div class = "classify-txt">
+                    <div><i></i> <a href="">攻略中心首页</a></div> <i></i> <a href="">英雄列表</a>
+                </div>
+<!--                右上角版本-->
+                <div class = "classify-version">
+                    <i></i><span>VER 10.8版本</span>
+<!--                    版本hover-->
+                    <div class = "hover-version">所有展示内容的数据均来自该版本号下的游戏对局。由于需要足够多的数据积累，在新版本上线的初期该版本号可能会早于国服现网的版本号</div>
+                </div>
+<!--                底边-->
+                <i></i>
+            </div>
+            <!--            英雄容器-->
+            <div class = "container-hero">
+                <!--                英雄图鉴区域-->
+                <div class = "hero-map">
+                    <div class = "map-search">
+                        <input type="text" placeholder="输入英雄名称进行搜索"><i></i><i></i>
+                    </div>
+                    <div class = "map-content">
+<!--                        小提示-->
+                        <span><i></i>英雄玩法分析仅取样于华贵铂金IV以上的排位对局数据</span>
+<!--                        英雄位置/英雄定位共用CSS样式-->
+                        <ul>
+                            <span>常用位置</span>
+                            <li><i></i>全选</li>
+                            <li><i></i>上单</li>
+                            <li><i></i>打野</li>
+                            <li><i></i>中单</li>
+                            <li><i></i>下路</li>
+                            <li><i></i>辅助</li>
+                            <li><i></i>周免英雄</li>
+                        </ul>
+                        <ul>
+                            <span>英雄定位</span>
+                            <li><i></i>全选</li>
+                            <li><i></i>战士</li>
+                            <li><i></i>法师</li>
+                            <li><i></i>刺客</li>
+                            <li><i></i>坦克</li>
+                            <li><i></i>射手</li>
+                            <li><i></i>辅助</li>
+                        </ul>
+<!--                        英雄图鉴标-->
+                        <div>
+                            <div> <span><img src="images/herohead/Aatrox.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Ahri.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Akali.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Alistar.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Amumu.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Anivia.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Annie.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Aphelios.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Ashe.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/AurelionSol.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Azir.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Bard.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Blitzcrank.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Brand.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Braum.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Caitlyn.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Camille.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Cassiopeia.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Chogath.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Corki.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Darius.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Diana.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Draven.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/DrMundo.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Ekko.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Elise.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Evelynn.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Ezreal.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/FiddleSticks.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Fiora.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Galio.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Gangplank.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Garen.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Gnar.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Gragas.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Graves.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Hecarim.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Illaoi.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Irelia.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Ivern.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Janna.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/JarvanIV.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Jax.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Jayce.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Jhin.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Kaisa.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Kalista.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Karma.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Karthus.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Kassadin.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Katarina.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Kayle.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Kayn.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Kennen.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Khazix.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Kled.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/KogMaw.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Leblanc.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/LeeSin.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Leona.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Lissandra.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Lucian.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Lulu.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Lux.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Malphite.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Malzahar.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Maokai.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/MasterYi.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/MissFortune.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/MonkeyKing.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Mordekaiser.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Morgana.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Nami.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Nasus.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Nautilus.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Neeko.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Nidalee.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Nocturne.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Nunu.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Olaf.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Orianna.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Ornn.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Pantheon.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Poppy.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Pyke.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Qiyana.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Rakan.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Rammus.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/RekSai.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Renekton.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Rengar.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Riven.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Rumble.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Ryze.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Sejuani.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Senna.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Sett.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Shaco.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Shen.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Shyvana.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Singed.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Sion.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Sivir.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Skarner.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Sona.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Swain.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Sylas.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Syndra.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/TahmKench.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Taliyah.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Talon.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Taric.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Teemo.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Thresh.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Tristana.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Trundle.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Tryndamere.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/TwistedFate.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Twitch.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Udyr.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Urgot.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Varus.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Vayne.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Veigar.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Velkoz.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Vi.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Viktor.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Vladimir.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Volibear.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Warwick.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Xayah.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Xerath.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/XinZhao.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Yasuo.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Yorick.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Yuumi.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Zac.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Zed.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Ziggs.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Zilean.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Zoe.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                            <div> <span><img src="images/herohead/Zyra.png" alt=""></span> <span>黑暗之女</span> <span>中单</span> </div>
+                        </div>
+                    </div>
+                </div>
+<!--                                英雄排行数据区域-->
+                <div class = "hero-rank">
+                    <div class = "rank-head">
+                        <i></i>
+                        英雄排行榜
+                        <i></i>
+                    </div>
+                    <div class = "rank-content">
+                        <ul>
+                            <li>综合</li>
+                            <li class="hover-ul1">胜率</li>
+                            <li class="hover-ul1">登场率</li>
+                            <li class="hover-ul1">禁用率</li>
+                        </ul>
+                        <ul>
+                            <li>上单</li>
+                            <li class = "rank-ul2">打野</li>
+                            <li class = "rank-ul2">中路</li>
+                            <li class = "rank-ul2">下路</li>
+                            <li class = "rank-ul2">辅助</li>
+                        </ul>
+                        <div class = "detail">
+                            <div>
+                                <div><strong>排名</strong></div>
+                                <div><strong>英雄</strong></div>
+                                <div><strong>胜率</strong></div>
+                                <div><strong>登场率</strong></div>
+                            </div>
+                            <ul>
+                                <li>1<span class = "eq"> <i></i> <em>0</em> </span></li>
+                                <li>
+                                    <div>
+                                        <img src="images/herohead/MonkeyKing.png" alt="">
+                                    </div>
+                                    <div>
+                                        <p>齐天大圣</p>
+                                        <p>上单 打野 中单</p>
+                                    </div>
+                                </li>
+                                <li>52.34%</li>
+                                <li>9.67%</li>
+                            </ul>
+                            <ul>
+                                <li> 2 <span class = "eq"> <i></i> <em>0</em> </span></li>
+                                <li>
+                                    <div>
+                                        <img src="images/herohead/Yasuo.png" alt="">
+                                    </div>
+                                    <div>
+                                        <p>亚索</p>
+                                        <p>上单 打野 中单</p>
+                                    </div>
+                                </li>
+                                <li>52.34%</li>
+                                <li>9.67%</li>
+                            </ul>
+                            <ul>
+                                <li> 3 <span class = "up"> <i></i> <em>2</em> </span></li>
+                                <li>
+                                    <div>
+                                        <img src="images/herohead/MasterYi.png" alt="">
+                                    </div>
+                                    <div>
+                                        <p>剑圣</p>
+                                        <p>上单 打野 中单</p>
+                                    </div>
+                                </li>
+                                <li>52.34%</li>
+                                <li>9.67%</li>
+                            </ul>
+                            <ul>
+                                <li> 4 <span class = "up"> <i></i> <em>2</em> </span></li>
+                                <li>
+                                    <div>
+                                        <img src="images/herohead/KogMaw.png" alt="">
+                                    </div>
+                                    <div>
+                                        <p>大嘴</p>
+                                        <p>上单 打野 中单</p>
+                                    </div>
+                                </li>
+                                <li>52.34%</li>
+                                <li>9.67%</li>
+                            </ul>
+                            <ul>
+                                <li> 5 <span class = "dw"> <i></i> <em>1</em> </span></li>
+                                <li>
+                                    <div>
+                                        <img src="images/herohead/Azir.png" alt="">
+                                    </div>
+                                    <div>
+                                        <p>沙皇</p>
+                                        <p>上单 打野 中单</p>
+                                    </div>
+                                </li>
+                                <li>52.34%</li>
+                                <li>9.67%</li>
+                            </ul>
+                            <ul>
+                                <li> 6 <span class = "up"> <i></i> <em>2</em> </span></li>
+                                <li>
+                                    <div>
+                                        <img src="images/herohead/Teemo.png" alt="">
+                                    </div>
+                                    <div>
+                                        <p>提莫</p>
+                                        <p>上单 打野 中单</p>
+                                    </div>
+                                </li>
+                                <li>52.34%</li>
+                                <li>9.67%</li>
+                            </ul>
+                            <ul>
+                                <li> 7 <span class = "dw"> <i></i> <em>4</em> </span></li>
+                                <li>
+                                    <div>
+                                        <img src="images/herohead/Fiora.png" alt="">
+                                    </div>
+                                    <div>
+                                        <p>剑姬</p>
+                                        <p>上单 打野 中单</p>
+                                    </div>
+                                </li>
+                                <li>52.34%</li>
+                                <li>9.67%</li>
+                            </ul>
+                            <ul>
+                                <li> 8 <span class = "up"> <i></i> <em>4</em> </span></li>
+                                <li>
+                                    <div>
+                                        <img src="images/herohead/Aphelios.png" alt="">
+                                    </div>
+                                    <div>
+                                        <p>厄斐琉斯</p>
+                                        <p>上单 打野 中单</p>
+                                    </div>
+                                </li>
+                                <li>52.34%</li>
+                                <li>9.67%</li>
+                            </ul>
+                            <ul>
+                                <li> 9 <span class = "eq"> <i></i> <em>0</em> </span></li>
+                                <li>
+                                    <div>
+                                        <img src="images/herohead/Warwick.png" alt="">
+                                    </div>
+                                    <div>
+                                        <p>狼人</p>
+                                        <p>上单 打野 中单</p>
+                                    </div>
+                                </li>
+                                <li>52.34%</li>
+                                <li>9.67%</li>
+                            </ul>
+                            <ul>
+                                <li> 10 <span class = "up"> <i></i> <em>9</em> </span></li>
+                                <li>
+                                    <div>
+                                        <img src="images/herohead/Hecarim.png" alt="">
+                                    </div>
+                                    <div>
+                                        <p>人马</p>
+                                        <p>上单 打野 中单</p>
+                                    </div>
+                                </li>
+                                <li>52.34%</li>
+                                <li>9.67%</li>
+                            </ul>
+                            <ul>
+                                <li> 11 <span class = "dw"> <i></i> <em>4</em> </span></li>
+                                <li>
+                                    <div>
+                                        <img src="images/herohead/Qiyana.png" alt="">
+                                    </div>
+                                    <div>
+                                        <p>琪亚娜</p>
+                                        <p>上单 打野 中单</p>
+                                    </div>
+                                </li>
+                                <li>52.34%</li>
+                                <li>9.67%</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+<!--右侧固定导航-->
+    <div class = "fix-nav">
+        <img src="images/polo-static.png" alt="">
+        <img src="images/polo.gif" alt="">
+        <span>问题反馈  <i></i></span>
+        <div class = "hover-fix-nav">欢迎提出改进建议，帮助我们做得更好</div>
+
+    </div>
+
+    <script src = "js/default.js"></script>
+</body>
+</html>
